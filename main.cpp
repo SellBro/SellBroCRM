@@ -1,12 +1,16 @@
 #include "SellBroCRM.h"
 #include "LoginScreen.h"
+#include "MainWidget.h"
 #include <QtWidgets/QApplication>
+
 
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    LoginScreen login;
+
+    MainWidget login;
+  
     login.show();
     return a.exec();
 }
