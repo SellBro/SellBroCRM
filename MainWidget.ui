@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWidget</class>
  <widget class="QWidget" name="MainWidget">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -361,8 +364,7 @@ font-family:&quot;Calibri&quot;;</string>
                           <cursorShape>ArrowCursor</cursorShape>
                          </property>
                          <property name="styleSheet">
-                          <string notr="true">
-</string>
+                          <string notr="true"/>
                          </property>
                          <property name="text">
                           <string>Remember me</string>
@@ -406,6 +408,7 @@ margin-left: 20px;
 margin-bottom: 150px;
 font-family:&quot;Calibri&quot;;
 font-size: 18px;
+font-weight: bold;
 }</string>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,2,1">
