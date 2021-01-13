@@ -85,7 +85,35 @@ color: #ffffff;</string>
         </property>
         <item>
          <widget class="QWidget" name="headerWidget" native="true">
+          <property name="font">
+           <font>
+            <family>Yu Gothic UI Semibold</family>
+            <pointsize>-1</pointsize>
+            <weight>7</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+            <stylestrategy>PreferDefault</stylestrategy>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">padding-top: 5px;</string>
+          </property>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QLabel" name="iconLabel">
              <property name="styleSheet">
@@ -108,11 +136,11 @@ max-height: 70px;</string>
             <widget class="QLabel" name="titleLabel">
              <property name="font">
               <font>
-               <family>Yu Gothic UI Semibold</family>
+               <family>Procrastinating Pixie</family>
                <pointsize>-1</pointsize>
-               <weight>7</weight>
+               <weight>75</weight>
                <italic>false</italic>
-               <bold>false</bold>
+               <bold>true</bold>
               </font>
              </property>
              <property name="autoFillBackground">
@@ -120,7 +148,13 @@ max-height: 70px;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">qproperty-alignment: AlignCenter;
-font-size: 48px;</string>
+font-size: 48px;
+font-family: &quot;Procrastinating Pixie&quot;;
+font-weight: bold;
+</string>
+             </property>
+             <property name="locale">
+              <locale language="English" country="UnitedStates"/>
              </property>
              <property name="lineWidth">
               <number>1</number>
@@ -144,19 +178,40 @@ font-size: 48px;</string>
         </item>
         <item>
          <widget class="QLabel" name="signInLabel">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>-1</pointsize>
+            <weight>75</weight>
+            <italic>false</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
           <property name="styleSheet">
-           <string notr="true">font-size: 36px;
-padding-left: 20px;</string>
+           <string notr="true">font-size: 48px;
+padding-left: 20px;
+font-family: &quot;Calibri&quot;;
+font-weight: bold;
+padding-bottom: 30px;</string>
           </property>
           <property name="text">
            <string>Sign In</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignBottom|Qt::AlignJustify</set>
+          </property>
+          <property name="margin">
+           <number>0</number>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QWidget" name="authWidget" native="true">
           <property name="styleSheet">
-           <string notr="true"/>
+           <string notr="true">font-family: &quot;Sitka Text&quot;;</string>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,7">
            <property name="spacing">
@@ -178,12 +233,13 @@ padding-left: 20px;</string>
             <widget class="QWidget" name="credsWidget" native="true">
              <property name="styleSheet">
               <string notr="true">QLineEdit {
-font-size: 18px;
+font-size: 20px;
 border: none;
 border-bottom-width: 2px;
 border-bottom-style: solid;
 border-bottom-color: #bb81d8;
 color: #aaaaac;
+font-family:&quot;Calibri&quot;;
 }</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0">
@@ -251,7 +307,7 @@ color: #aaaaac;
                   <widget class="QWidget" name="passwordWidgetHelp" native="true">
                    <property name="styleSheet">
                     <string notr="true">font-size: 14px;
-</string>
+font-family:&quot;Calibri&quot;;</string>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_5">
                     <property name="spacing">
@@ -271,6 +327,9 @@ color: #aaaaac;
                     </property>
                     <item>
                      <widget class="QWidget" name="rememberMeWidget" native="true">
+                      <property name="styleSheet">
+                       <string notr="true">font-size: 16px;</string>
+                      </property>
                       <layout class="QHBoxLayout" name="horizontalLayout_3">
                        <property name="spacing">
                         <number>0</number>
@@ -289,8 +348,21 @@ color: #aaaaac;
                        </property>
                        <item>
                         <widget class="QRadioButton" name="rememberMeButton">
+                         <property name="font">
+                          <font>
+                           <family>Calibri</family>
+                           <pointsize>-1</pointsize>
+                           <weight>7</weight>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
                          <property name="cursor">
                           <cursorShape>ArrowCursor</cursorShape>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">
+</string>
                          </property>
                          <property name="text">
                           <string>Remember me</string>
@@ -332,6 +404,8 @@ padding: 15px;
 border-radius: 25px;
 margin-left: 20px;
 margin-bottom: 150px;
+font-family:&quot;Calibri&quot;;
+font-size: 18px;
 }</string>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,2,1">
@@ -482,6 +556,15 @@ margin-right: 10px;
    </item>
    <item>
     <widget class="QWidget" name="infoWidget" native="true">
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Semibold</family>
+       <pointsize>8</pointsize>
+       <weight>7</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="acceptDrops">
       <bool>false</bool>
      </property>
@@ -493,6 +576,8 @@ margin-right: 10px;
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

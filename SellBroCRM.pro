@@ -13,3 +13,6 @@ OBJECTS_DIR += debug
 UI_DIR += .
 RCC_DIR += .
 include(SellBroCRM.pri)
+
+RESOURCES += \
+    resources.qrc
