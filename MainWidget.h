@@ -1,16 +1,16 @@
 #pragma once
 
-#include <QWidget>
+#include <QStackedWidget>
 #include "ui_MainWidget.h"
 
-class MainWidget : public QWidget
+class MainWidget : public QStackedWidget 
 {
 	Q_OBJECT
 
 public:
-	MainWidget(QWidget *parent = Q_NULLPTR);
+	MainWidget(QStackedWidget *parent = Q_NULLPTR);
 	~MainWidget();
 
 private:
-	Ui::MainWidget ui;
+	Ui::mainWidget ui;
 };
