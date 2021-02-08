@@ -17,7 +17,7 @@
     <height>720</height>
    </size>
   </property>
-  <widget class="QWidget" name="signInWidget_2">
+  <widget class="QWidget" name="signInWidget">
    <property name="enabled">
     <bool>true</bool>
    </property>
@@ -67,7 +67,7 @@ font: 63 8pt &quot;Yu Gothic UI Semibold&quot;;</string>
      <number>0</number>
     </property>
     <item>
-     <widget class="QWidget" name="signInWidget" native="true">
+     <widget class="QWidget" name="signInBlockWidget" native="true">
       <property name="styleSheet">
        <string notr="true">background: #7700b4;
 font-size: 16px;
@@ -604,7 +604,7 @@ margin-right: 10px;
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="page_2">
+  <widget class="QWidget" name="appWidget">
    <property name="enabled">
     <bool>false</bool>
    </property>
