@@ -87,17 +87,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <QtRcc Include="SellBroCRM.qrc" />
-    <QtUic Include="LoginScreen.ui" />
     <QtUic Include="MainWidget.ui" />
     <QtUic Include="SellBroCRM.ui" />
-    <QtMoc Include="SellBroCRM.h" />
-    <ClCompile Include="LoginScreen.cpp" />
     <ClCompile Include="MainWidget.cpp" />
-    <ClCompile Include="SellBroCRM.cpp" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="LoginScreen.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWidget.h" />
