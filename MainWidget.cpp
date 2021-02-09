@@ -7,7 +7,6 @@ MainWidget::MainWidget(QStackedWidget *parent)
 	ui.setupUi(this);
 
 
-
 	// Qt::WindowFlags flags = this->windowFlags(); this->setWindowFlags(flags | Qt::FramelessWindowHint); // remove border
 }
 
