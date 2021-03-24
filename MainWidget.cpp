@@ -7,7 +7,9 @@ MainWidget::MainWidget(QStackedWidget *parent) : QStackedWidget(parent)
 
 	manager = new QNetworkAccessManager();
 	auto status = connect(manager, &QNetworkAccessManager::finished,this, &MainWidget::ReplyFinished);
+
 	qDebug() << "Connection Status: " << status;
+
 	// Qt::WindowFlags flags = this->windowFlags(); this->setWindowFlags(flags | Qt::FramelessWindowHint); // remove border
 }
 
@@ -17,9 +19,10 @@ MainWidget::~MainWidget()
 }
 
 void MainWidget::ReplyFinished(QNetworkReply* reply) {
-	QString answer = reply->readAll();
-	qDebug() << answer;
-	QApplication::quit();
+
+    QString answer = reply->readAll();
+    qDebug() << "Answer";
+    qDebug() << answer;
 }
 
 void MainWidget::on_loginButton_clicked()
@@ -27,9 +30,16 @@ void MainWidget::on_loginButton_clicked()
 	email = ui.emailInput->text();
 	password = ui.passwordInput->text();
 
-	manager->get(QNetworkRequest(QUrl(API_URL)));
+    QJsonObject json;
+    json.insert("email", email);
+    json.insert("password", password);
 
-	qDebug() << manager;
+    request.setUrl(QUrl("http://localhost:8000/login"));
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+
+    manager->post(request, QJsonDocument(json).toJson());
+
+    qDebug() << json;
 }
 
 void MainWidget::on_signUpButton_clicked()

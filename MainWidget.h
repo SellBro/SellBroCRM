@@ -2,6 +2,9 @@
 
 #include <QNetworkReply>
 #include <QNetworkAccessManager>
+#include <QHttpMultiPart>
+#include <QJsonObject>
+#include <QJsonDocument>
 #include "ui_MainWidget.h"
 
 class MainWidget : public QStackedWidget 
@@ -26,7 +29,7 @@ private:
 	QString email;
 	QString password;
 
-	const QString API_URL = "https://sellbro-crm-api.herokuapp.com/health";
+    const QString API_URL = "http://localhost:8000";
 	QNetworkAccessManager* manager;
 	QNetworkRequest request;
 };
