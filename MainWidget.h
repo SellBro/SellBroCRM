@@ -28,6 +28,9 @@ private:
 
 	QString email;
 	QString password;
+    QString token;
+
+    bool rememberPassword;
 
     const QString API_URL = "http://localhost:8000";
 	QNetworkAccessManager* manager;
