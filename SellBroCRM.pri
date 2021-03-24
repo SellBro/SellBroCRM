@@ -7,10 +7,8 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./SellBroCRM.h \
-    ./MainWidget.h
-SOURCES += ./SellBroCRM.cpp \
-    ./main.cpp \
+HEADERS += ./MainWidget.h
+SOURCES += ./main.cpp \
     ./MainWidget.cpp
 FORMS += ./SellBroCRM.ui \
     ./MainWidget.ui
